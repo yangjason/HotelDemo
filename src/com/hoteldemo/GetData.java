@@ -47,12 +47,7 @@ public class GetData extends BroadcastReceiver {
 
 		for(SmsMessage currentMessage:message)
 		{
-//		sb.append("come from：\n");                    
-//		//发送人的电话号码
-//		sb.append(currentMessage.getDisplayOriginatingAddress());
-//		sb.append("\n-------传来的信息---------\n");
-//		//发送的信息内容
-//		sb.append(currentMessage.getDisplayMessageBody());
+
 		dealNum1 = mDataPreferenc.getString(
 				DataPreferenceKey.PAREPHONENUM_KEY, "15951616861");
 		dealNum2 = "+86"+dealNum1;
