@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/map_bubblebtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10.0dip"
+    android:paddingLeft="5.0dip"
+    android:paddingRight="5.0dip"
+    android:paddingTop="5.0dip" >
+
+    <RelativeLayout
+        android:id="@+id/click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bubble_background"
+        android:clickable="true"
+        android:focusable="true" >
+
+        <TextView
+            android:id="@+id/stip"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/call" />
+
+        <LinearLayout
+            android:id="@+id/popuptext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/stip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/dtel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="15951616861"
+                android:textColor="#000000"
+                android:textSize="17.0sp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/nametime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+				<TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="司机 ："
+                    android:textColor="#000000"
+                    android:textSize="14.0sp" />
+                
+                <TextView
+                    android:id="@+id/dname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="张老三"
+                    android:textColor="#000000"
+                    android:textSize="14.0sp" />
+               
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/dcarinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未知"
+                android:textColor="#000000"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/car" />
+
+</RelativeLayout>

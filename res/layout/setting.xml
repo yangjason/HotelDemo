@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/flipui_setting"
+    android:visibility="invisible"
+    android:orientation="vertical" >
+    
+    <CheckBox 
+     android:id="@+id/setting_isvoicetip" 
+     android:layout_width="wrap_content" 
+     android:layout_height="wrap_content" 
+     android:textColor="#000000"
+     android:text="开启语音提示" 
+     />
+    
+     <CheckBox 
+     android:id="@+id/setting_isvoicentfyDstnc" 
+     android:layout_width="wrap_content" 
+     android:layout_height="wrap_content" 
+     android:textColor="#000000"
+     android:text="语音提示每次新位置距离" 
+     />
+        
+    <LinearLayout 
+     android:layout_width="wrap_content" 
+     android:layout_height="wrap_content"    
+      android:orientation="horizontal"
+        >     
+     <CheckBox 
+     android:id="@+id/setting_issetcity" 
+     android:layout_width="wrap_content" 
+     android:layout_height="wrap_content" 
+     android:textColor="#000000"
+     android:text="指定乘车城市为:" 
+     />    
+     <EditText 
+     android:id="@+id/setting_searchcity"
+     android:layout_width="wrap_content" 
+     android:layout_height="wrap_content" 
+     android:textColor="#000000"
+     android:singleLine="true"
+     android:text="南京"    
+       />
+     </LinearLayout>
+     
+     <LinearLayout 
+     android:layout_width="wrap_content" 
+     android:layout_height="wrap_content"    
+     android:orientation="horizontal"
+        > 
+     <CheckBox 
+     android:id="@+id/setting_isphonenum" 
+     android:layout_width="wrap_content" 
+     android:layout_height="wrap_content" 
+     android:checked="true"
+     android:enabled="false"
+     android:textColor="#000000"
+     android:text="指定对端手机号:" 
+     /> 
+                 
+     <EditText 
+     android:id="@+id/setting_parephonenum"
+     android:layout_width="wrap_content" 
+     android:layout_height="wrap_content" 
+     android:textColor="#000000"
+     android:singleLine="true"
+     android:phoneNumber="true"
+     android:numeric="integer"
+     android:text="13681986978"   
+       />     
+    </LinearLayout>
+     
+     <LinearLayout 
+     android:layout_width="wrap_content" 
+     android:layout_height="wrap_content"    
+     android:orientation="horizontal"
+        > 
+    <CheckBox 
+     android:id="@+id/setting_isupdtlctn" 
+     android:layout_width="wrap_content" 
+     android:layout_height="wrap_content" 
+     android:checked="true"
+     android:enabled="false"
+     android:textColor="#000000"
+     android:text="更新车辆位置周期（分钟）:" 
+     />                    
+         
+     <EditText 
+     android:id="@+id/sttng_updtdrvprd"
+     android:layout_width="wrap_content" 
+     android:layout_height="wrap_content" 
+     android:textColor="#000000"
+     android:singleLine="true"
+     android:numeric="integer"
+     android:text="2"   
+       />     
+    </LinearLayout>
+     
+     <LinearLayout 
+     android:layout_width="wrap_content" 
+     android:layout_height="wrap_content"    
+     android:orientation="horizontal"
+        > 
+    <CheckBox 
+     android:id="@+id/setting_isnotifydstn" 
+     android:layout_width="wrap_content" 
+     android:layout_height="wrap_content" 
+     android:checked="true"
+     android:enabled="false"
+     android:textColor="#000000"
+     android:text="指定提醒距离范围（千米）:" 
+     /> 
+                                             
+     <EditText 
+     android:id="@+id/sttng_ntfydstnc"
+     android:layout_width="wrap_content" 
+     android:layout_height="wrap_content" 
+     android:textColor="#000000"
+     android:singleLine="true"
+     android:numeric="integer"
+     android:text="2"   
+       />     
+    </LinearLayout>
+
+    <LinearLayout 
+     android:id="@+id/settingaccntmng"
+     android:clickable="true"
+     android:layout_width="wrap_content" 
+     android:layout_height="wrap_content"    
+     android:orientation="horizontal"
+     android:layout_marginLeft="20dp"
+        > 
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="账户管理"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"            
+            android:src="@drawable/ico_common" />
+         <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"            
+            android:src="@drawable/ico_common" />
+          <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"            
+            android:src="@drawable/ico_common" />
+    </LinearLayout>
+    
+     <RelativeLayout 
+             android:layout_width="fill_parent"  
+             android:layout_height="wrap_content" 
+             android:layout_marginTop="20dp"
+         >
+          <Button 
+             android:id="@+id/savesetting"  
+             android:layout_width="100dp"  
+             android:textColor="#000000"
+             android:layout_height="wrap_content" 
+             android:layout_alignParentBottom="true"
+			  android:layout_centerInParent="true"            
+             android:textSize="20sp"
+             android:text=" 保存设置 "   
+             android:background="@drawable/okcancelbtn"
+             />         
+     </RelativeLayout>   
+    
+        
+</LinearLayout>

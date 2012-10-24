@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topPannel"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/callCenterTxt"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/bg_title"
+            android:gravity="center"
+            android:text="锦江服务中心"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:id="@+id/callCenterImg"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:clickable="true"
+            android:src="@drawable/telephone_blue" />
+
+        <RelativeLayout
+            android:id="@+id/bottommenu"
+            android:background="@drawable/bg_nav"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/mainbtn_onekeycall"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:clickable="true"
+                    android:focusableInTouchMode="true"
+                    
+                    android:src="@drawable/one_key_call" />
+
+                <TextView
+                    android:id="@+id/OneKeyCallTxt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:text="叫车" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/mainbtn_order"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:clickable="true"
+                    android:focusableInTouchMode="true"
+                    android:src="@drawable/order" />
+
+                <TextView
+                    android:id="@+id/OneKeyCallTxt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:text="订单" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/mainbtn_setting"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:clickable="true"
+                    android:focusableInTouchMode="true"
+                    android:src="@drawable/setting" />
+
+                <TextView
+                    android:id="@+id/OneKeyCallTxt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dp"
+                    android:gravity="center"
+                    android:text="设置" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/flipshow"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/bottommenu"
+            android:layout_below="@id/callCenterTxt"
+            android:background="@drawable/quick_button_bg" >
+
+            <include layout="@layout/onekeycall" />
+
+            <include layout="@layout/order" />
+
+            <include layout="@layout/setting" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</LinearLayout>

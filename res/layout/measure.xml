@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/topPannel">
+ <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+     <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"        
+        >
+        <Button
+        android:id ="@+id/point1"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:text="SetP1" />     
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:text="Addr:" 
+        android:gravity="center"
+		/>
+       <TextView
+        android:id ="@+id/p1addr"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:text="   " 
+        android:gravity="center"
+		/>
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:text="Name:" 
+        android:gravity="center"
+		/>
+       <TextView
+        android:id ="@+id/p1name"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:text="   " 
+        android:gravity="center"
+		/>    
+    </LinearLayout> 
+      <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"        
+        >
+        <Button
+        android:id ="@+id/point1"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:text="SetP2" />     
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:text="Addr:" 
+        android:gravity="center"
+		/>
+       <TextView
+        android:id ="@+id/p1addr"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:text="   " 
+        android:gravity="center"
+		/>
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:text="Name:" 
+        android:gravity="center"
+		/>
+       <TextView
+        android:id ="@+id/p1name"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:text="   " 
+        android:gravity="center"
+		/>    
+    </LinearLayout> 
+    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"        
+        >  
+        <CheckBox
+        android:id ="@+id/locationCB"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:text="Tap" 
+        /> 
+        <CheckBox
+        android:id ="@+id/showSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:text="Search" 
+        />
+                
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:text="  Dist:"
+        android:gravity="center" 
+		/>
+       <TextView
+        android:id ="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:text="   "
+        android:gravity="center" 
+		/>
+     
+    </LinearLayout> 
+    
+    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:visibility="gone"        
+        >
+     <CheckBox
+        android:id ="@+id/locationCB"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:text="upDate            " 
+        android:visibility="gone"/>
+    <Button
+        android:id ="@+id/bntSearch2"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:text="search" />        
+    </LinearLayout> 
+    
+    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:id ="@+id/searchLayout"  
+    android:visibility="gone"     
+        >
+        
+     <EditText
+        android:id ="@+id/inputCity"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:text="南京" />
+    <EditText
+        android:id ="@+id/inputAddr"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:text="三牌楼" />   
+     <Button
+        android:id ="@+id/bntSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:text="search" />             
+    </LinearLayout> 
+   
+     </LinearLayout>   
+
+    
+<com.baidu.mapapi.MapView android:id="@+id/bmapsView" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:clickable="true" />
+       -->
+</LinearLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/quick_button_bg"
+    android:orientation="vertical" >
+            <TextView
+            android:id="@+id/callCenterTxt"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/bg_title"
+            android:gravity="center"
+            android:text=" 下 单  "
+            android:textSize="22sp" />
+                
+ 	<LinearLayout
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal"
+     android:layout_marginTop="30dp"
+     android:layout_marginLeft="5dp"
+         >
+     <TextView 
+     android:layout_width="80dp"    
+     android:layout_height="wrap_content"   
+     android:text="乘客姓名:"
+     android:textSize="15sp"     
+     android:textColor="#000000"  
+         />    
+      <TextView 
+     android:id="@+id/clientname"
+     android:layout_width="wrap_content" 
+     android:layout_height="wrap_content"   
+     android:text="张小三"
+     android:textSize="20sp"
+     android:textColor="#000000"  
+         />   
+     </LinearLayout>
+     
+     <LinearLayout
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal"
+     android:layout_marginTop="10dp"
+     android:layout_marginLeft="5dp"
+         >
+     <TextView 
+     android:layout_width="80dp"    
+     android:layout_height="wrap_content"   
+     android:text="联系手机:"
+    android:textSize="15sp"    
+     android:textColor="#000000"  
+         />    
+      <TextView
+     android:id="@+id/mobilenum" 
+     android:layout_width="wrap_content" 
+     android:layout_height="wrap_content"   
+     android:text="13556653443"
+     android:textSize="20sp"
+     android:textColor="#000000"  
+         />   
+     </LinearLayout>
+ 	
+     <LinearLayout
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal"
+     android:layout_marginTop="10dp"
+     android:layout_marginLeft="5dp"
+     android:clickable="true"
+  	  android:id="@+id/setbooktime"
+         >
+     
+     <TextView 
+     android:layout_width="80dp"    
+     android:layout_height="wrap_content"   
+     android:text="乘车时间:"
+     android:textSize="15sp"    
+     android:textColor="#000000"  
+      />     
+     <TextView 
+     android:layout_width="200dp" 
+     android:layout_height="wrap_content" 
+     android:id="@+id/booktime"   
+     android:text="15 时 25 分"
+     android:textSize="20sp"
+     android:textColor="#000000"  
+      />         
+     <ImageView
+		android:layout_width="wrap_content"
+		android:layout_height="fill_parent"
+		android:layout_marginTop="2dp"
+		android:src="@drawable/expander_ic_minimized" />     
+     
+     </LinearLayout>
+     
+     <LinearLayout
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal"
+     android:layout_marginTop="10dp"
+     android:layout_marginLeft="5dp"
+     android:clickable="true"
+  	  android:id="@+id/setcarparklocation"
+         > 
+          
+     <TextView 
+     android:layout_width="80dp"    
+     android:layout_height="wrap_content"
+     android:layout_alignParentLeft="true"   
+     android:text="乘车地点:"
+     android:textSize="15sp"    
+     android:textColor="#000000"  
+      /> 
+          
+     <TextView 
+     android:id="@+id/waitlctninfo" 
+     android:layout_width="200dp" 
+     android:layout_height="wrap_content" 
+     android:layout_centerHorizontal="true"  
+     android:text="鼓楼区长江科技gldllabcdefghijklmopqrst"
+     android:textSize="20sp"
+     android:textColor="#000000"  
+      />
+              
+     <ImageView
+        android:visibility="gone"
+		android:layout_width="wrap_content"
+		android:layout_height="fill_parent"
+		android:layout_alignParentRight="true"
+		android:layout_marginTop="2dp"
+		android:src="@drawable/expander_ic_minimized" />     
+     
+    </LinearLayout>
+     <com.baidu.mapapi.MapView 
+            android:id="@+id/baidumapsView"
+            android:layout_width="fill_parent"
+            android:layout_height="220dp"
+            android:clickable="false"
+             android:visibility="gone"
+        >
+	</com.baidu.mapapi.MapView>
+     
+    <RelativeLayout 
+    	  android:layout_width="wrap_content"  
+         android:layout_height="wrap_content"  
+         android:orientation="horizontal" 
+         
+          android:layout_marginBottom="60dp"  >   
+      <Button 
+             android:id="@+id/cancel"  
+             android:layout_width="100dp"  
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:layout_alignParentLeft="true" 
+             android:layout_marginLeft="30dp"
+             android:textSize="20sp" 
+             android:text=" 取 消 "   
+             android:background="@drawable/okcancelbtn"
+             />
+        <Button 
+             android:id="@+id/ok"  
+             android:layout_width="100dp"  
+             android:layout_height="wrap_content" 
+             android:layout_alignParentBottom="true"
+             android:layout_alignParentRight="true"
+             android:layout_marginRight="30dp"
+             android:textSize="20sp"
+             android:text=" 提 交 "   
+             android:background="@drawable/okcancelbtn"
+             />
+    </RelativeLayout>
+     
+</LinearLayout>

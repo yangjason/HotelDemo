@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/btn_center_dialog_background"
+    android:orientation="vertical" >
+    <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        >
+     <Button 
+         android:id="@+id/bntCallNum"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+		 android:layout_centerInParent="true"
+        android:text="    拨打 400-222-1123    "
+        android:background="@drawable/callcenternumbtn"
+        />   
+        <TextView 
+         android:id="@+id/btndiv1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:visibility="invisible"
+        android:layout_below="@id/bntCallNum"
+        />
+          <Button
+        android:layout_marginBottom="10dp" 
+        android:id="@+id/btnCancel"
+        android:layout_below="@id/btndiv1"
+        android:layout_alignLeft="@id/bntCallNum"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+        android:text="    取消    "
+        android:background="@drawable/callcenternumbtn"        
+        />
+                  <TextView 
+         android:id="@+id/btndiv2"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:visibility="invisible"
+        android:layout_below="@id/btnCancel"
+        />    
+      
+    </RelativeLayout>
+    
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, HotelDemoActivity!</string>
+    <string name="app_name">HotelDemo</string>
+    <string name="car_take_location">"输入或长按地图选择乘车地点"</string>
+</resources>

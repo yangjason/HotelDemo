@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/flipui_onekeycall"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:visibility="invisible" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <FrameLayout
+            android:id="@+id/search_control"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" >
+            <RelativeLayout
+                android:id="@+id/order_search_o"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible" >
+
+                <TextView
+                    android:id="@+id/akeycall_searchtip"
+                    style="?android:attr/textViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="状态："
+                    android:textColor="#888888"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/ordercarstate"
+                    style="?android:attr/textViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="暂无订单"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/controlinorder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/okcancelbtn"
+                    android:enabled="true"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="    控  制    "
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/order_search_s"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/searchbg" >
+
+                <TextView
+                    android:id="@+id/akeycall_searchtip"
+                    style="?android:attr/textViewStyle"
+                    android:layout_width="200dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="33dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    
+                    android:textColor="#888888"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/akeycall_searchinput"
+                    style="?android:attr/textViewStyle"
+                    android:layout_width="200dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="33dp"
+                    android:background="@null"
+                    android:textColor="#000000"
+                    android:focusableInTouchMode="true"
+                    android:text="@string/car_take_location"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/onekeycall_search_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/okcancelbtn"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="  搜 索  "
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        </FrameLayout>
+        
+        <FrameLayout
+            android:id="@+id/callkey_lctnctroll"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            >
+            <RelativeLayout
+                android:id="@+id/lctncntrl_callkey_l"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal" 
+                 android:visibility="invisible">
+                <ImageButton
+                    android:id="@+id/showcurlctn_inmap"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+					   android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:clickable="true"
+                    android:src="@drawable/point_icon_in" />
+
+                <ImageButton
+                    android:id="@+id/showdrv_inmap"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="20dp"
+					   android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:clickable="true"
+                    android:src="@drawable/car" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lctncntrl_callkey_c"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" >
+
+                <Button
+                    android:id="@+id/onekeycall_takeme_btn"
+                    android:layout_width="280dp"
+                    android:layout_height="46dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/car_take_me"
+                    android:focusable="false"
+                    android:text="   派车来接我   "
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <com.baidu.mapapi.MapView
+            android:id="@+id/bmapsView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/callkey_lctnctroll"
+            android:layout_below="@id/search_control"
+            android:clickable="true" >
+        </com.baidu.mapapi.MapView>
+    </RelativeLayout>
+
+</FrameLayout>
